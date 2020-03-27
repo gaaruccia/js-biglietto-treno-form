@@ -1,0 +1,47 @@
+body{
+  background-color: purple;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+.inmezzo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divisione{
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.divisione2{
+  padding-bottom: 12px;
+}
+.white{
+  background-color: white;
+}
+h2{
+  padding-bottom: 24px;
+}
+.vicino{
+  display: inline-block;
+  padding-left: 24px;
+}
+.vicino0{
+  display: inline-block;
+}
+.invisible{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.block{
+  display: block;
+  text-align: center;
+}
