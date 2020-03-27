@@ -1,6 +1,4 @@
 var valnome, valkm, valeta, sconto, msg;
-var carrozza = Math.floor(Math.random()*10)+1
-var codiceCP = Math.floor(Math.random()*10000)+1
 var costo1Kilometro = 0.21;
 var nomeU = document.getElementById('nome');
 var kmU = document.getElementById('km');
@@ -15,6 +13,8 @@ function(){
   valkm = kmU.value;
   var prezzoFinale = valkm * costo1Kilometro;
   valeta = etaU.value;
+  var carrozza = Math.floor(Math.random()*10)+1
+  var codiceCP = Math.floor(Math.random()*10000)+1
   if (valeta >=1 && valeta <= 17){
     sconto = prezzoFinale * 20 / 100;
     msg = "Sconto Minorenne"
