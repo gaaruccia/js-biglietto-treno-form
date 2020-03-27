@@ -9,6 +9,7 @@ function(){
   var visible = document.getElementById('sectionmod')
   visible.className = "visible";
   visible.className = "white";
+  visible.className = "layout";
   valnome = nomeU.value;
   valkm = kmU.value;
   var prezzoFinale = valkm * costo1Kilometro;
