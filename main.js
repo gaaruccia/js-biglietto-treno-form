@@ -11,7 +11,7 @@ function(){
   visible.className = "white";
   visible.className = "layout";
   valnome = nomeU.value;
-  valkm = kmU.value;
+  valkm = parseInt(kmU.value);
   var prezzoFinale = valkm * costo1Kilometro;
   valeta = etaU.value;
   var carrozza = Math.floor(Math.random()*10)+1
@@ -45,5 +45,5 @@ annullaButton.addEventListener("click",
     valkm = kmU.value = ""
     var invisible = document.getElementById('sectionmod')
     invisible.className = "invisible";
-  }
+    }
 );
