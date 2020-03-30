@@ -13,13 +13,14 @@ function(){
   valnome = nomeU.value;
   valkm = parseInt(kmU.value);
   var prezzoFinale = valkm * costo1Kilometro;
-  valeta = etaU.value;
+  var prezzoScontato = prezzoFinale - sconto;
+  valeta = parseInt(etaU.value);
   var carrozza = Math.floor(Math.random()*10)+1
   var codiceCP = Math.floor(Math.random()*10000)+1
   if (valeta >=1 && valeta <= 17){
     sconto = prezzoFinale * 20 / 100;
     msg = "Sconto Minorenne"
-  } else if (valeta >= 66){
+    } else if (valeta >= 66){
     sconto = prezzoFinale * 40 / 100;
     msg = "Sconto Over 65"
   } else if (valeta >=18 && valeta <=65){
@@ -28,8 +29,8 @@ function(){
   }else{
     valnome ="Inserisci il tuo nome sopra"
     msg = "Inserisci l' età sopra"
+    prezzoScontato = 0.00
   }
-  var prezzoScontato = prezzoFinale - sconto;
   document.getElementById('nomeu').innerHTML = valnome;
   document.getElementById('sconto').innerHTML = msg;
   document.getElementById('carrozza').innerHTML = carrozza;
